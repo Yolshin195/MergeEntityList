@@ -19,6 +19,6 @@ version = 1.1.0
                 .setLambdaOnOldAndNew((newString, oldString) -> {"your code"})
                 .setLambdaOnOnlyNew(newString -> {"your code"})
                 .setLambdaOnOnlyOld(oldString -> {"your code"})
-                setLambdaOnCollision((type, entityList) -> {"your code"})
+                .setLambdaOnCollision((type, entityList) -> {"your code"})
                 .merge(newStringList, oldStringList);
 ```
