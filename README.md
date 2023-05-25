@@ -3,7 +3,7 @@
 version = 1.1.0
 
 ## Example
-```
+```java
         List<String> newStringList = new ArrayList<String>()
         {{
             add("Test1"); add("Test2"); add("Test3"); add("OnlyNew1"); add("OnlyNew2");
