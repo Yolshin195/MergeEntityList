@@ -16,8 +16,9 @@ version = 1.1.0
 
         new MergeEntityList<String>()
                 .setLambdaGetCode(entity -> entity)
-                .setLambdaOnOldAndNew((newString, oldString) -> countNewAndOld.getAndIncrement())
-                .setLambdaOnOnlyNew(newString -> countNew.getAndIncrement())
-                .setLambdaOnOnlyOld(oldString -> countOld.getAndIncrement())
+                .setLambdaOnOldAndNew((newString, oldString) -> {"your code"})
+                .setLambdaOnOnlyNew(newString -> {"your code"})
+                .setLambdaOnOnlyOld(oldString -> {"your code"})
+                setLambdaOnCollision((type, entityList) -> {"your code"})
                 .merge(newStringList, oldStringList);
 ```
