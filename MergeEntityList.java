@@ -78,7 +78,7 @@ public class MergeEntityList<T> {
     }
 
     protected void onOnlyOld(T oldEntity) {
-        if (Objects.nonNull(lambdaOnOnlyNew)) {
+        if (Objects.nonNull(lambdaOnOnlyOld)) {
             lambdaOnOnlyOld.accept(oldEntity);
         }
     }
